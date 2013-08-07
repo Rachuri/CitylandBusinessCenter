@@ -1,0 +1,24 @@
+﻿body {
+}
+.paraContacts {
+    text-align:center;
+}
+#Company {
+    font-weight:bold;
+}
+.tblContacts {
+    text-align:center;
+    position:relative;
+    left:300px;
+}
+.PaddingTd {
+    padding-right:200px;
+}
+.googleMap {
+    width:500px ;
+    height:300px;
+    text-align:center;
+    border:5px solid #1c2828; 
+    position:relative;
+    left:300px;   
+}

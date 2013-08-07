@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMasterPage.Master.cs" Inherits="CitylandBusinessCenter.MasterPages.MainMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title>CitylandBusinessCenter</title>
+    <link href="../Styles/MainMasterPage.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div id="mainDiv">
+            <asp:Image ID="logoImage" CssClass="logoImage" ImageUrl="~/Images/1 Logo/CBC-Logo.png" runat="server" />
+            <header id="MainHeader" class="mainHeader">
+                <ul>
+                    <li><a href="../Home.aspx">Home</a></li>
+                    <li><a href="../MyBooking.aspx">MyBooking</a></li>
+                    <li><a href="../QuesAns.aspx">Ques&Ans</a></li>
+                    <li><a href="../Contacts.aspx">Contacts</a></li>
+                </ul>
+            </header>
+            <div id="contentDiv">
+                <table id="MainMasterPageTable">
+                    <tr>
+                        <td class="SideBar"></td>
+                        <td class="MainContent">
+                            <asp:ContentPlaceHolder ID="MainMasterPageContentPlaceHolder" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <div>
+                                <div style="background-color:#3b3b3d;width:100%;">
+                                <asp:Image ID="Image1" style="display:block;position:relative;left:29px;" ImageUrl="~/Images/OtherImages/Footer.png" runat="server" />
+                                </div>
+                                <table>
+                                    <tr>
+                                        <td  style="text-align: center;float:left;position:relative;left:50px;">
+                                            <br />
+                                            <br />
+                                            <div id="footer">
+                                                copyright &copy;2013 Cityland Business Center , All rights reserved
+                                            </div>
+                                            <div style="text-align: center">
+                                                Site best viewed in IE9,Firefox and Google Crome
+                                            </div>
+                                            <br />
+                                        </td>
+                                        <td style="text-align:center;float:right;position:relative;left:250px;">
+                                            <strong class="Payment">Payment Options</strong><br />
+                                            <img class="creditCard" src="Images/3 CreditCards Logo/visa.jpg" alt="visa" />
+                                            <img class="creditCard" src="Images/3 CreditCards Logo/MasterCard.jpg" alt="MasterCard" />
+                                            <img class="creditCard" src="Images/3 CreditCards Logo/amex.jpg" alt="America Express" />
+                                            <img class="creditCard" src="Images/3 CreditCards Logo/Discover.jpg" alt="Discover" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td class="SideBar"></td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+
+    </form>
+</body>
+</html>

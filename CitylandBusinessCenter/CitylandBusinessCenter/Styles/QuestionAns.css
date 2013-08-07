@@ -1,0 +1,47 @@
+﻿body {
+}
+.quesHeader {
+    color:#040676;
+    position:relative;
+    left:50px;
+    text-align:center;
+    font-size:1.1em;
+}
+.paraQues {
+    position:relative;    
+    left:100px;
+    text-align:justify; 
+    font-size:1.1em;
+}
+.repeaterHeader {
+    color:#040676;
+    position:relative;
+    left:50px;
+    font-size:large;
+    list-style:none;
+}
+.lblQuestion{
+
+    width:600px;
+     position:relative;    
+    left:100px;
+       text-align:justify; 
+       margin-top:100px;
+    border-radius:10px;   
+    
+    font-size:1.1em;
+}
+.paraAns {
+    position:relative;    
+    left:150px;    
+    width:720px;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    text-align:justify; 
+    font-size:1.0em;   
+    border-radius:10px;
+    background-color:#2b392d;
+    
+}
